@@ -49,6 +49,16 @@ class FixtureHelper extends Module
     /**
      * @inheritdoc
      */
+    public function globalFixtures()
+    {
+        return [
+            'init'=>\yii\test\InitDbFixture::className(),
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function fixtures()
     {
         return [
